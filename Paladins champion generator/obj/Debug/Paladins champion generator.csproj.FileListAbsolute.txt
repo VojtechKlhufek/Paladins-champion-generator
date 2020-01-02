@@ -1,0 +1,7 @@
+E:\C# Projects\Paladins champion generator\Paladins champion generator\bin\Debug\Paladins champion generator.exe.config
+E:\C# Projects\Paladins champion generator\Paladins champion generator\bin\Debug\Paladins champion generator.exe
+E:\C# Projects\Paladins champion generator\Paladins champion generator\bin\Debug\Paladins champion generator.pdb
+E:\C# Projects\Paladins champion generator\Paladins champion generator\obj\Debug\Paladins champion generator.csprojAssemblyReference.cache
+E:\C# Projects\Paladins champion generator\Paladins champion generator\obj\Debug\Paladins champion generator.csproj.CoreCompileInputs.cache
+E:\C# Projects\Paladins champion generator\Paladins champion generator\obj\Debug\Paladins champion generator.exe
+E:\C# Projects\Paladins champion generator\Paladins champion generator\obj\Debug\Paladins champion generator.pdb
