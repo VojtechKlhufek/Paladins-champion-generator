@@ -10,14 +10,14 @@ namespace Paladins_champion_generator
         static void Main(string[] args)
         {
             string appName = "Paladins champion generator";
-            string appVersion = "1.1.1";
+            string appVersion = "1.1.0";
             string appAuthor = "Vojtěch Klhůfek";
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("{0}: Version {1} by {2}", appName, appVersion, appAuthor);
             Console.ResetColor();
 
             string[] tanks = { "Ash", "Atlas", "Barik", "Fernando", "Inara", "Khan", "Makoa", "Raum", "Ruckus", "Terminus", "Torvald" };
-            string[] damages = { "Bomb King", "Cassie", "Dredge", "Drogoz", "Imani", "Kinessa", "Lian", "Sha Lin", "Strix", "Tyra", "Viktor", "Vivian", "Willo" };
+            string[] damages = { "Bomb King", "Cassie", "Dredge", "Drogoz", "Imani", "Kinessa", "Lian", "Sha Lin", "Strix", "Tyra", "Viktor", "Vivian", "Willo", "Tiberius" };
             string[] supports = { "Furia", "Grohk", "Grover", "IO", "Jenos", "Mal'Damba", "Pip", "Seris", "Ying" };
             string[] flanks = { "Androxus", "Buck", "Evie", "Koga", "Lex", "Maeve", "Moji", "Skye", "Talus", "Zhin" };
 
@@ -38,18 +38,7 @@ namespace Paladins_champion_generator
                 string[] chosenClasses = tanks.Concat(damages).Concat(supports).Concat(flanks).ToArray();
                 Console.WriteLine();
 
-                while (numOfChamps > 0)
-                {
-
-                    int index = rand.Next(chosenClasses.Length);
-                    Console.WriteLine($"{chosenClasses[index]}");
-                    if (sameChampion == "N" || sameChampion == "n")
-                    {
-                        chosenClasses = chosenClasses.Where(w => w != chosenClasses[index]).ToArray();
-                    }
-                    numOfChamps--;
-                }
-            
+                WriteChamps();
             }
 
             if (classes.ToLower().Contains("t") && classes.ToLower().Contains("s") && classes.ToLower().Contains("f"))
@@ -57,18 +46,7 @@ namespace Paladins_champion_generator
                 string[] chosenClasses = tanks.Concat(supports).Concat(flanks).ToArray();
                 Console.WriteLine();
 
-                while (numOfChamps > 0)
-                {
-
-                    int index = rand.Next(chosenClasses.Length);
-                    Console.WriteLine($"{chosenClasses[index]}");
-                    if (sameChampion == "N" || sameChampion == "n")
-                    {
-                        chosenClasses = chosenClasses.Where(w => w != chosenClasses[index]).ToArray();
-                    }
-                    numOfChamps--;
-                }
-           
+                WriteChamps();
             }
 
             if (classes.ToLower().Contains("t") && classes.ToLower().Contains("d") && classes.ToLower().Contains("f"))
@@ -76,18 +54,7 @@ namespace Paladins_champion_generator
                 string[] chosenClasses = tanks.Concat(damages).Concat(flanks).ToArray();
                 Console.WriteLine();
 
-                while (numOfChamps > 0)
-                {
-
-                    int index = rand.Next(chosenClasses.Length);
-                    Console.WriteLine($"{chosenClasses[index]}");
-                    if (sameChampion == "N" || sameChampion == "n")
-                    {
-                        chosenClasses = chosenClasses.Where(w => w != chosenClasses[index]).ToArray();
-                    }
-                    numOfChamps--;
-                }
-            
+                WriteChamps();
             }
 
             if (classes.ToLower().Contains("t") && classes.ToLower().Contains("d") && classes.ToLower().Contains("s"))
@@ -95,18 +62,7 @@ namespace Paladins_champion_generator
                 string[] chosenClasses = tanks.Concat(damages).Concat(supports).Concat(flanks).ToArray();
                 Console.WriteLine();
 
-                while (numOfChamps > 0)
-                {
-
-                    int index = rand.Next(chosenClasses.Length);
-                    Console.WriteLine($"{chosenClasses[index]}");
-                    if (sameChampion == "N" || sameChampion == "n")
-                    {
-                        chosenClasses = chosenClasses.Where(w => w != chosenClasses[index]).ToArray();
-                    }
-                    numOfChamps--;
-                }
-             
+                WriteChamps();
             }
 
             if (classes.ToLower().Contains("d") && classes.ToLower().Contains("s") && classes.ToLower().Contains("f"))
@@ -114,18 +70,7 @@ namespace Paladins_champion_generator
                 string[] chosenClasses = damages.Concat(supports).Concat(flanks).ToArray();
                 Console.WriteLine();
 
-                while (numOfChamps > 0)
-                {
-
-                    int index = rand.Next(chosenClasses.Length);
-                    Console.WriteLine($"{chosenClasses[index]}");
-                    if (sameChampion == "N" || sameChampion == "n")
-                    {
-                        chosenClasses = chosenClasses.Where(w => w != chosenClasses[index]).ToArray();
-                    }
-                    numOfChamps--;
-                }
-               
+                WriteChamps();
             }
 
             if (classes.ToLower().Contains("t") && classes.ToLower().Contains("d"))
@@ -133,18 +78,7 @@ namespace Paladins_champion_generator
                 string[] chosenClasses = tanks.Concat(damages).ToArray();
                 Console.WriteLine();
 
-                while (numOfChamps > 0)
-                {
-
-                    int index = rand.Next(chosenClasses.Length);
-                    Console.WriteLine($"{chosenClasses[index]}");
-                    if (sameChampion == "N" || sameChampion == "n")
-                    {
-                        chosenClasses = chosenClasses.Where(w => w != chosenClasses[index]).ToArray();
-                    }
-                    numOfChamps--;
-                }
-           
+                WriteChamps();
             }
 
             if (classes.ToLower().Contains("s") && classes.ToLower().Contains("f"))
@@ -152,18 +86,7 @@ namespace Paladins_champion_generator
                 string[] chosenClasses = supports.Concat(flanks).ToArray();
                 Console.WriteLine();
 
-                while (numOfChamps > 0)
-                {
-
-                    int index = rand.Next(chosenClasses.Length);
-                    Console.WriteLine($"{chosenClasses[index]}");
-                    if (sameChampion == "N" || sameChampion == "n")
-                    {
-                        chosenClasses = chosenClasses.Where(w => w != chosenClasses[index]).ToArray();
-                    }
-                    numOfChamps--;
-                }
-               
+                WriteChamps();
             }
 
             if (classes.ToLower().Contains("t") && classes.ToLower().Contains("s"))
@@ -171,18 +94,7 @@ namespace Paladins_champion_generator
                 string[] chosenClasses = tanks.Concat(supports).ToArray();
                 Console.WriteLine();
 
-                while (numOfChamps > 0)
-                {
-
-                    int index = rand.Next(chosenClasses.Length);
-                    Console.WriteLine($"{chosenClasses[index]}");
-                    if (sameChampion == "N" || sameChampion == "n")
-                    {
-                        chosenClasses = chosenClasses.Where(w => w != chosenClasses[index]).ToArray();
-                    }
-                    numOfChamps--;
-                }
-              
+                WriteChamps();
             }
 
             if (classes.ToLower().Contains("t") && classes.ToLower().Contains("f"))
@@ -190,110 +102,64 @@ namespace Paladins_champion_generator
                 string[] chosenClasses = tanks.Concat(flanks).ToArray();
                 Console.WriteLine();
 
-                while (numOfChamps > 0)
-                {
-
-                    int index = rand.Next(chosenClasses.Length);
-                    Console.WriteLine($"{chosenClasses[index]}");
-                    if (sameChampion == "N" || sameChampion == "n")
-                    {
-                        chosenClasses = chosenClasses.Where(w => w != chosenClasses[index]).ToArray();
-                    }
-                    numOfChamps--;
-                }
-            
+                WriteChamps();
             }
 
             if (classes.ToLower().Contains("d") && classes.ToLower().Contains("f"))
             {
                 string[] chosenClasses = damages.Concat(flanks).ToArray();
                 Console.WriteLine();
-
-                while (numOfChamps > 0)
-                {
-
-                    int index = rand.Next(chosenClasses.Length);
-                    Console.WriteLine($"{chosenClasses[index]}");
-                    if (sameChampion == "N" || sameChampion == "n")
-                    {
-                        chosenClasses = chosenClasses.Where(w => w != chosenClasses[index]).ToArray();
-                    }
-                    numOfChamps--;
-                }
-          
+                
+                WriteChamps();
             }
 
             if (classes.ToLower().Contains("t"))
             {
                 Console.WriteLine();
-                while (numOfChamps > 0)
-                {
 
-                    int index = rand.Next(tanks.Length);
-                    Console.WriteLine($"{tanks[index]}");
-                    if (sameChampion == "N" || sameChampion == "n")
-                    {
-                        tanks = tanks.Where(w => w != tanks[index]).ToArray();
-                    }
-                    numOfChamps--;
-                }
-           
+                WriteChamps();
             }
 
             if (classes.ToLower().Contains("d"))
             {
                 Console.WriteLine();
-                while (numOfChamps > 0)
-                {
-                    int index = rand.Next(damages.Length);
-                    Console.WriteLine($"{damages[index]}");
-                    if (sameChampion == "N" || sameChampion == "n")
-                    {
-                        damages = damages.Where(w => w != damages[index]).ToArray();
-                    }
-                    numOfChamps--;
-                }
-              
+
+                WriteChamps();
             }
 
             if (classes.ToLower().Contains("s"))
             {
                 Console.WriteLine();
-                while (numOfChamps > 0)
-                {
-                    int index = rand.Next(supports.Length);
-                    Console.WriteLine($"{supports[index]}");
-                    if (sameChampion == "N" || sameChampion == "n")
-                    {
-                        supports = supports.Where(w => w != supports[index]).ToArray();
-                    }
-                    numOfChamps--;
-                }
-                
+
+                WriteChamps();
             }
 
             if (classes.ToLower().Contains("f"))
             {
                 Console.WriteLine();
-                while (numOfChamps > 0)
-                {
-                    int index = rand.Next(flanks.Length);
-                    Console.WriteLine($"{flanks[index]}");
-                       if (sameChampion == "N" || sameChampion == "n")
-                    {
-                        flanks = flanks.Where(w => w != flanks[index]).ToArray();
-                    }
-                    numOfChamps--;
-                }
-              
-                
+
+                WriteChamps();
             }
             Console.ResetColor();
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
 
+            void WriteChamps()
+            {
+                while (numOfChamps > 0)
+                {
+                    int index = rand.Next(flanks.Length);
+                    Console.WriteLine($"{flanks[index]}");
+                    if (sameChampion == "N" || sameChampion == "n")
+                    {
+                        flanks = flanks.Where(w => w != flanks[index]).ToArray();
+                    }
+                    numOfChamps--;
+                }
+            }
 
 
         }
+      
     }
 }
