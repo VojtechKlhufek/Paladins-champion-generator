@@ -10,7 +10,7 @@ namespace Paladins_champion_generator
         static void Main(string[] args)
         {
             string appName = "Paladins champion generator";
-            string appVersion = "1.1.0";
+            string appVersion = "1.1.1";
             string appAuthor = "Vojtěch Klhůfek";
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("{0}: Version {1} by {2}", appName, appVersion, appAuthor);
