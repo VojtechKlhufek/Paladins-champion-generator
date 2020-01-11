@@ -49,8 +49,7 @@ namespace Paladins_champion_generator
                     }
                     numOfChamps--;
                 }
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
+            
             }
 
             if (classes.ToLower().Contains("t") && classes.ToLower().Contains("s") && classes.ToLower().Contains("f"))
@@ -69,8 +68,7 @@ namespace Paladins_champion_generator
                     }
                     numOfChamps--;
                 }
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
+           
             }
 
             if (classes.ToLower().Contains("t") && classes.ToLower().Contains("d") && classes.ToLower().Contains("f"))
@@ -89,8 +87,7 @@ namespace Paladins_champion_generator
                     }
                     numOfChamps--;
                 }
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
+            
             }
 
             if (classes.ToLower().Contains("t") && classes.ToLower().Contains("d") && classes.ToLower().Contains("s"))
@@ -109,8 +106,7 @@ namespace Paladins_champion_generator
                     }
                     numOfChamps--;
                 }
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
+             
             }
 
             if (classes.ToLower().Contains("d") && classes.ToLower().Contains("s") && classes.ToLower().Contains("f"))
@@ -129,8 +125,7 @@ namespace Paladins_champion_generator
                     }
                     numOfChamps--;
                 }
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
+               
             }
 
             if (classes.ToLower().Contains("t") && classes.ToLower().Contains("d"))
@@ -149,8 +144,7 @@ namespace Paladins_champion_generator
                     }
                     numOfChamps--;
                 }
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
+           
             }
 
             if (classes.ToLower().Contains("s") && classes.ToLower().Contains("f"))
@@ -169,8 +163,7 @@ namespace Paladins_champion_generator
                     }
                     numOfChamps--;
                 }
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
+               
             }
 
             if (classes.ToLower().Contains("t") && classes.ToLower().Contains("s"))
@@ -189,8 +182,7 @@ namespace Paladins_champion_generator
                     }
                     numOfChamps--;
                 }
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
+              
             }
 
             if (classes.ToLower().Contains("t") && classes.ToLower().Contains("f"))
@@ -209,8 +201,7 @@ namespace Paladins_champion_generator
                     }
                     numOfChamps--;
                 }
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
+            
             }
 
             if (classes.ToLower().Contains("d") && classes.ToLower().Contains("f"))
@@ -229,8 +220,7 @@ namespace Paladins_champion_generator
                     }
                     numOfChamps--;
                 }
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
+          
             }
 
             if (classes.ToLower().Contains("t"))
@@ -247,8 +237,7 @@ namespace Paladins_champion_generator
                     }
                     numOfChamps--;
                 }
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
+           
             }
 
             if (classes.ToLower().Contains("d"))
@@ -264,8 +253,7 @@ namespace Paladins_champion_generator
                     }
                     numOfChamps--;
                 }
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
+              
             }
 
             if (classes.ToLower().Contains("s"))
@@ -281,8 +269,7 @@ namespace Paladins_champion_generator
                     }
                     numOfChamps--;
                 }
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
+                
             }
 
             if (classes.ToLower().Contains("f"))
@@ -299,11 +286,12 @@ namespace Paladins_champion_generator
                     numOfChamps--;
                 }
               
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
+                
             }
             Console.ResetColor();
-            
+            Console.WriteLine("Press any key to exit");
+            Console.ReadKey();
+
 
 
         }
