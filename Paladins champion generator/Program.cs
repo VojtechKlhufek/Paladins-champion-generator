@@ -10,7 +10,7 @@ namespace Paladins_champion_generator
         static void Main(string[] args)
         {
             string appName = "Paladins champion generator";
-            string appVersion = "1.1.0";
+            string appVersion = "1.1.2";
             string appAuthor = "Vojtěch Klhůfek";
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("{0}: Version {1} by {2}", appName, appVersion, appAuthor);
@@ -22,16 +22,21 @@ namespace Paladins_champion_generator
             string[] flanks = { "Androxus", "Buck", "Evie", "Koga", "Lex", "Maeve", "Moji", "Skye", "Talus", "Zhin" };
 
             Random rand = new Random();
-
+            string sameChampion;
             Console.WriteLine("How many champions do you want to generate?");
             int numOfChamps = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("From which classes? (t = tank, d = damage, s = support, f = flank)");
             string classes = Console.ReadLine();
-
-            Console.WriteLine("Can there be two of the same champion? [Y/N]");
-            string sameChampion = Console.ReadLine();
-
+            if (numOfChamps != 1)
+            {
+                Console.WriteLine("Can there be two of the same champion? [Y/N]");
+                sameChampion = Console.ReadLine();
+            }
+            else
+            {
+                sameChampion = "N";
+            }
             Console.ForegroundColor = ConsoleColor.Red;
             if (classes.ToLower().Contains("t") && classes.ToLower().Contains("d") && classes.ToLower().Contains("s") && classes.ToLower().Contains("f"))
             {
@@ -140,6 +145,7 @@ namespace Paladins_champion_generator
 
                 WriteChamps();
             }
+
             Console.ResetColor();
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
