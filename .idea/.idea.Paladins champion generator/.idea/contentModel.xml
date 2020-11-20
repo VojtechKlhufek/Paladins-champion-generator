@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\vojta\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\vojta\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Paladins champion generator.-1090587251.00" t="ExcludeRecursive" />
-    <e p="E:\C# Projects\Paladins champion generator" t="IncludeFlat">
+    <e p="C:\Coding\Paladins-champion-generator" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="Paladins champion generator" t="IncludeRecursive">
         <e p="App.config" t="Include" />
@@ -17,5 +15,9 @@
       </e>
       <e p="Paladins champion generator.sln" t="IncludeFlat" />
     </e>
+    <e p="C:\Users\vojte\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\vojte\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Paladins champion generator.-968516733.00" t="ExcludeRecursive" />
+    <e p="C:\Users\vojte\AppData\Roaming\JetBrains\Rider2020.2\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\vojte\AppData\Roaming\JetBrains\Rider2020.2\extensions" t="IncludeRecursive" />
   </component>
 </project>

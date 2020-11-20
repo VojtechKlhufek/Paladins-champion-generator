@@ -18,7 +18,7 @@ namespace Paladins_champion_generator
             string[] tanks = { "Ash", "Atlas", "Barik", "Fernando", "Inara", "Khan", "Makoa", "Raum", "Ruckus", "Terminus", "Torvald" };
             string[] damages = { "Bomb King", "Cassie", "Dredge", "Drogoz", "Imani", "Kinessa", "Lian", "Sha Lin", "Strix", "Tyra", "Viktor", "Vivian", "Willo", "Tiberius" };
             string[] supports = { "Furia", "Grohk", "Grover", "IO", "Jenos", "Mal'Damba", "Pip", "Seris", "Ying", "Corvus" };
-            string[] flanks = { "Androxus", "Buck", "Evie", "Koga", "Lex", "Maeve", "Moji", "Skye", "Talus", "Zhin" };
+            string[] flanks = { "Androxus", "Buck", "Evie", "Koga", "Lex", "Maeve", "Moji", "Skye", "Talus", "Zhin", "Vora" };
 
             string[] chosenClasses;
             string sameChampion;
